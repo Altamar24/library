@@ -5,7 +5,7 @@ class Author(models.Model):
     last_name = models.CharField('Фамилия', max_length=100)
 
     def __str__(self) -> str:
-        return f'{self.last_name} {self.last_name}'
+        return f'{self.first_name} {self.last_name}'
 
 
 class Book(models.Model):
